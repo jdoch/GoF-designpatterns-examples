@@ -1,4 +1,4 @@
-package Factory;
+package FactoryMethod;
 
 public class Plane implements Vehicle {
 
