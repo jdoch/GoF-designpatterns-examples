@@ -1,12 +1,12 @@
 package Facade;
 
 public class CarStartFacade {
-    private Engine engine;
-    private Lights lights;
+    private final Engine engine;
+    private final Lights lights;
 
-    public CarStartFacade() {
-        this.engine = new Engine();
-        this.lights = new Lights();
+    public CarStartFacade(Engine engine, Lights lights) {
+        this.engine = engine;
+        this.lights = lights;
     }
 
     void start(){
