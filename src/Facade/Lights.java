@@ -1,11 +1,7 @@
 package Facade;
 
-public class Lights {
-    void turnOnLights(){
-        System.out.println("Lights turned on!");
-    }
+public interface Lights {
+    void turnOnLights();
 
-    void turnOffLights(){
-        System.out.println("Lights turned off!");
-    }
+    void turnOffLights();
 }

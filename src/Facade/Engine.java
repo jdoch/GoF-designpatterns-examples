@@ -1,11 +1,7 @@
 package Facade;
 
-public class Engine {
-    void turnOnEngine(){
-        System.out.println("Engine turned on!");
-    }
+public interface Engine {
+    void turnOnEngine();
 
-    void turnOffEngine(){
-        System.out.println("Engine turned on!");
-    }
+    void turnOffEngine();
 }
