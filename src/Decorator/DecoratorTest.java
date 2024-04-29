@@ -2,14 +2,12 @@ package Decorator;
 
 public class DecoratorTest {
     public static void main(String[] args){
-        Coffee coffee = new Latte();
-        coffee.displayIngredients();
-        System.out.println();
-        coffee = new Espresso();
-        coffee.displayIngredients();
-        System.out.println();
+        Shape circle = new Circle();
+        Shape redCircle = new GreenShapeDecorator(new Circle());
+        Shape redRectangle = new GreenShapeDecorator(new Rectangle());
 
-        coffee = new Sugar(new Sugar(new Sugar(new Latte())));
-        coffee.displayIngredients();
+        circle.draw();
+        redCircle.draw();
+        redRectangle.draw();
     }
 }
